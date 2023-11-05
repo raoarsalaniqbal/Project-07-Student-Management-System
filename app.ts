@@ -2,19 +2,20 @@
 
 class School{
     name:string
+    
     students:Student[]=[];
     teachers:Teacher[]=[];
 
     addStudent(stdObj:Student){
         this.students.push(stdObj)
     }
-
-    addTeacher(techObj:Teacher){
-        this.teachers.push(techObj)
     
     constructor(name:string){
         this.name=name;
     }
+
+    addTeacher(techObj:Teacher){
+        this.teachers.push(techObj)
 }
 }
     
